@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(187, 0, 255);
+}
+
+#one {
+    height: 350px;
+    width: 500px;
+    background-image: url(ice.jpeg);
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: +3;
+}
+
+p{
+    font-size: 30px;
+}

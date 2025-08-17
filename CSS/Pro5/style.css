@@ -1,0 +1,29 @@
+*{
+    padding:0px ;
+    margin:0px ;
+}
+
+#outer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    border: 10px solid blue;
+    border-top: 10px solid rgb(5, 255, 5);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: spinAnimate 1s ease-in-out 0s infinite ;
+}
+
+@keyframes spinAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
