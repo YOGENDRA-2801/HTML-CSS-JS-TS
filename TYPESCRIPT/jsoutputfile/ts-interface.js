@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const vidyarthi = {
     name: "Yogendra",
     age: 22,
@@ -13,4 +11,5 @@ const shikshak = {
     department: "development"
 };
 console.log(shikshak);
+export {};
 //# sourceMappingURL=ts-interface.js.map

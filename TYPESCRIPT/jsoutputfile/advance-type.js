@@ -1,6 +1,5 @@
-"use strict";
 // Advanced -- union , intersection , type alias , enum , literal
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 /* union -- multiple DT mese kisi ek ko choose kiya jata hai
 
 let mixtype : string | number | [] = "Yogendra" ;

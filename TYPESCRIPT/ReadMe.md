@@ -24,6 +24,6 @@
     2. If config file is present use "npx tsc" to convert all the ts file to js ek hi baar me
     3. "outDir": "./output" -- tells ki ts se convert hui js wali saari file / output file konsi location me aayegi
     4. "target": "es2023" -- it tells that jab code typescript se javascript m convert hoga to konsa javascript version use hoga
-    5. "declaration": true -- creates declaration/definition file (.d wali) from js and ts file
+    5. "declaration": true -- creates declaration/definition file (.d wali) from js and ts file ; "module": "ES6"  
 
 # ABC

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function greet() {
     return "Hello World";
 }
@@ -30,4 +28,5 @@ function random() {
         return "Random Text";
     }
 }
+export {};
 //# sourceMappingURL=ts-functions.js.map

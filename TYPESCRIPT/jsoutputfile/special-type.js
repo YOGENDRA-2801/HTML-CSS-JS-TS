@@ -1,6 +1,4 @@
-"use strict";
 // Special -- any , unknown , void , never
-Object.defineProperty(exports, "__esModule", { value: true });
 /* any -- turns off type checking or disables type safety
 let shabd : any = "Yogendra" ;
 shabd = true ;  shabd = 100 ;   console.log(shabd) ;
@@ -38,4 +36,5 @@ function yerror() {
 function khali() {
     console.log("Not returning anything");
 }
+export {};
 //# sourceMappingURL=special-type.js.map

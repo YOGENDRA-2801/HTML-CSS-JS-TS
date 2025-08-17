@@ -1,6 +1,4 @@
-"use strict";
 // Object -- array , tuple , object 
-Object.defineProperty(exports, "__esModule", { value: true });
 /* array -- predefined + collection of same DT */
 let wholenum = [0, 1, 2, 3, 4, 5, 6, 7];
 let avengers = ["Tony", "Thor", "Bruce", "Steve"];
@@ -10,6 +8,7 @@ wholenum.pop();
 avengers.push("Clint");
 console.log(wholenum);
 console.log(avengers, students, cities);
+export {};
 /* tuple -- fixed*-length + ordered collection + datatype
     const empdata : [string, number, boolean] = ["Yogendra", 25000, true] ;
     console.log(empdata);

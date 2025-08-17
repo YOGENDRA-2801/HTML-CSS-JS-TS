@@ -5,6 +5,8 @@ function display() : void {
     console.log( name, email, password );
 }
 
+console.log("Hello");
+
 // getElementById() ka return type HTMLElement | null hota hai
 // HTMLElement ke pass value property nahi hoti, isliye TypeScript error deta hai
 // as HTMLInputElement likhne se TypeScript ko pata chal jaata hai ki ye input element hai jisme value hoti hai

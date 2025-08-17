@@ -1,6 +1,4 @@
-"use strict";
 // Primitive -- number , string , boolean , null , undefined , bigInt , symbol  [lower case]  
-Object.defineProperty(exports, "__esModule", { value: true });
 /* number
     var ankh : number = 82 ;
     var ptAnkh : number = 99.99 ; // decimal number k liye bhi same datatype use hota hai
@@ -68,6 +66,7 @@ let email = "yoy@gmail.com";
 let pass = "123";
 console.log({ naam, email, pass }); // #1 -> { naam: 'YOY', email: 'yoy@gmail.com', pass: '123' }
 console.log(naam, email, pass); // #2 -> YOY yoy@gmail.com 123
+export {};
 // object shorthand -- 
 // 1. Yaha { naam, email, pass } ek object literal bana raha hai. 
 // 2. JavaScript me agar tum object shorthand use karte ho (matlab key aur variable ka naam same hai), to wo kuch aisa banata hai: #1
