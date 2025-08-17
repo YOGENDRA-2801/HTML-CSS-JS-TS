@@ -26,4 +26,11 @@
     4. "target": "es2023" -- it tells that jab code typescript se javascript m convert hoga to konsa javascript version use hoga
     5. "declaration": true -- creates declaration/definition file (.d wali) from js and ts file ; "module": "ES6"  
 
-# ABC
+# Class
+    1. Constructor
+        1.1 TypeScript में multiple cnstrctr implementations allowed नहीं हैं, लेकिन overloading possible है। 
+        1.2 Implementation sign में सभी params होने चाहिए जो overload sign में हैं, और extra parameters optional(?,|) होने चाहिए।
+        1.3 If overloaded cnstrctr is declared - Usage k time wahi cnstrctr use kr payoge jiska overload sign declare kiya hai
+    2. 
+
+#ABC
