@@ -55,12 +55,15 @@ class Manufacturer {
     get getCountry() {
         return this.country;
     }
+    set setProduct(saaman) {
+        this.product = saaman;
+    }
+    get getProduct() {
+        return this.product;
+    }
 }
 class Product extends Manufacturer {
-    constructor() {
-        super("apple", "India", "macbook", 109);
-    }
-    getProductName() {
+    showProduct() {
         console.log(this.product);
     }
 }
@@ -68,8 +71,9 @@ let newProduct = new Manufacturer("Lenovo", "India", "Ideapad", 201);
 console.log("Manufacturer is : ", newProduct.name);
 console.log("Product ID is : ", newProduct.proID);
 console.log(newProduct);
-newProduct.setCountry("Bharat");
+newProduct.setCountry = "Bharat";
 console.log(newProduct.getCountry);
+let dfrntPro = new Product(); // Error -- Expected 4 arguments, but got 0.
 export {};
 /* INHERITANCE */ 
 //# sourceMappingURL=ts-classes.js.map
