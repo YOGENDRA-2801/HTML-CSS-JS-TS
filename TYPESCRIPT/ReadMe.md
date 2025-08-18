@@ -31,6 +31,7 @@
         1.1 TypeScript में multiple cnstrctr implementations allowed नहीं हैं, लेकिन overloading possible है। 
         1.2 Implementation sign में सभी params होने चाहिए जो overload sign में हैं, और extra parameters optional(?,|) होने चाहिए।
         1.3 If overloaded cnstrctr is declared - Usage k time wahi cnstrctr use kr payoge jiska overload sign declare kiya hai
-    2. 
+    2. "type": "module",  // ES modules का full advantage मिलता है
+    3. default modifier is public. private - same class , protected - same & child class , public - same project
 
-#ABC
+# ABC

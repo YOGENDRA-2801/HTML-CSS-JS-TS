@@ -1,31 +1,75 @@
+/* INTRODUCTION + CONSTRUCTOR
 class Product {
-    name;
-    price;
-    pID;
-    inCart;
-    constructor(naam, daam, id, addCart) {
-        this.name = naam;
-        this.price = daam;
-        this.pID = id;
-        this.inCart = addCart || false;
+
+    name : string ;
+    price : number ;
+    pID : number ;
+    inCart : boolean ;
+
+    constructor(naam:string, daam:number, id:number) ;
+    constructor(naam:string, daam:number, id:number, addCart:boolean) ;
+
+    constructor(naam:string, daam:number, id:number, addCart?:boolean) {
+        this.name = naam ;
+        this.price = daam ;
+        this.pID = id ;
+        this.inCart = addCart || false ;
     }
-    addToCart() {
-        this.inCart = true;
+
+    addToCart() : void {
+        this.inCart = true ;
     }
-    buyProduct() {
+
+    buyProduct() : string {
         if (this.inCart) {
-            return `Product ${this.name} with ID ${this.pID} is purchased for ${this.price} rupees`;
-        }
-        else {
-            return "No product purchased";
+            return `Product ${this.name} with ID ${this.pID} is purchased for ${this.price} rupees`
+        } else {
+            return "No product purchased" ;
         }
     }
 }
-let samaan1 = new Product("IPhone 12", 12345, 101);
+
+let samaan1 = new Product("IPhone 12", 12345, 101) ;
 console.log(samaan1.buyProduct());
-samaan1.addToCart();
+samaan1.addToCart() ;
 console.log(samaan1.buyProduct());
-let samaan2 = new Product("IPhone 12", 12345, 101, true);
+
+let samaan2 = new Product("IPhone 16", 12345, 101, true) ;
 console.log(samaan2.buyProduct());
+*/
+/* ACCESS MODIFIER */
+class Manufacturer {
+    name;
+    country;
+    product;
+    proID; // default access modifier is public
+    constructor(name, country, product, proID) {
+        this.name = name;
+        this.country = country;
+        this.product = product;
+        this.proID = proID;
+    }
+    set setCountry(desh) {
+        this.country = desh;
+    }
+    get getCountry() {
+        return this.country;
+    }
+}
+class Product extends Manufacturer {
+    constructor() {
+        super("apple", "India", "macbook", 109);
+    }
+    getProductName() {
+        console.log(this.product);
+    }
+}
+let newProduct = new Manufacturer("Lenovo", "India", "Ideapad", 201);
+console.log("Manufacturer is : ", newProduct.name);
+console.log("Product ID is : ", newProduct.proID);
+console.log(newProduct);
+newProduct.setCountry("Bharat");
+console.log(newProduct.getCountry);
 export {};
+/* INHERITANCE */ 
 //# sourceMappingURL=ts-classes.js.map

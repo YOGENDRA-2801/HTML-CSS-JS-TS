@@ -90,7 +90,6 @@ let jagah = cities.THANE ;   console.log(jagah) ;  // 0
 /* literal */
 
 
-
 /*  type v/s interface
 type -- 2 type's ko jodne k liye hum & , | use krte
 interface -- 2 interface ko jodne k liye hum extend use krte
