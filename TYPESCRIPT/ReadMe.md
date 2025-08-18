@@ -33,5 +33,11 @@
         1.3 If overloaded cnstrctr is declared - Usage k time wahi cnstrctr use kr payoge jiska overload sign declare kiya hai
     2. "type": "module",  // ES modules का full advantage मिलता है
     3. default modifier is public. private - same class , protected - same & child class , public - same project
+    4. Here get (getter) and set (setter) are the properties not method. 
+    5. Module
+        5.1 default export ek special type ka export hai jisko import karte time koi bhi naam de sakte hain, kyunki yeh unnamed export hota hai.
+        5.2 yeh "fallback mechanism" nahi hai - yeh ek separate export type hai. Per file sirf EK default export allowed hai. 
+        5.3 Import karte time exact naam match karne ki zarurat nahi. Curly braces {} use nahi karte import mein. 
+        5.4 Named exports ke saath combine kar sakte hain default export ho like same file m ek defaul export + other normal export
 
 # ABC

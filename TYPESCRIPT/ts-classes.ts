@@ -38,18 +38,18 @@ let samaan2 = new Product("IPhone 16", 12345, 101, true) ;
 console.log(samaan2.buyProduct());
 */
 
-/* ACCESS MODIFIER */
+/* ACCESS MODIFIER + INHERITANCE */
 class Manufacturer {
     public name : string ;
     private country : string ;
     protected product : string ;
-    proID : number ;  // default access modifier is public
 
-    constructor (name:string, country:string, product : string, proID : number) {
-        this.name = name ;
-        this.country = country ;
-        this.product = product ;
-        this.proID = proID ;
+    constructor() ;
+    constructor(name:string, country:string, product: string) ;
+    constructor (name?:string, country?:string, product?: string) {
+        this.name = name || "No ownership" ;
+        this.country = country || "India" ;
+        this.product = product || "No product" ;
     }
     
     public set setCountry(desh : string) {
@@ -64,23 +64,37 @@ class Manufacturer {
     }
     public get getProduct() : string {
         return this.product ;
-    }     
+    }
+    
+    showLicense() {
+        console.log("License Number : 12345");
+        console.log("Country : India");
+    }
 }
 class Product extends Manufacturer {
-    showProduct() {
-        console.log(this.product);
+    proID : number ;
+    price : number ;
+
+    constructor(product: string, id:number, daam:number) {
+        super() ;
+        this.product = product ;  
+        this.proID = id ;
+        this.price = daam ;
+    }
+    showProductDetail() {
+        console.log("Product : " , this.product);
+        console.log("ID : " , this.proID);
+        console.log("Price : " , this.price);
     }
 }
 
-let newProduct = new Manufacturer("Lenovo", "India", "Ideapad", 201) ;
+let newProduct = new Manufacturer("Lenovo", "India", "Ideapad") ;
 console.log("Manufacturer is : " , newProduct.name);
-console.log("Product ID is : " , newProduct.proID);
 console.log(newProduct);
 
 newProduct.setCountry = "Bharat" ;
 console.log(newProduct.getCountry);
 
-let dfrntPro = new Product() ; // Error -- Expected 4 arguments, but got 0.
-
-
-/* INHERITANCE */
+let pro = new Product(newProduct.getProduct, 102, 12000) ; 
+pro.showProductDetail() ;
+pro.showLicense() ; 

@@ -37,17 +37,15 @@ console.log(samaan1.buyProduct());
 let samaan2 = new Product("IPhone 16", 12345, 101, true) ;
 console.log(samaan2.buyProduct());
 */
-/* ACCESS MODIFIER */
+/* ACCESS MODIFIER + INHERITANCE */
 class Manufacturer {
     name;
     country;
     product;
-    proID; // default access modifier is public
-    constructor(name, country, product, proID) {
-        this.name = name;
-        this.country = country;
-        this.product = product;
-        this.proID = proID;
+    constructor(name, country, product) {
+        this.name = name || "No ownership";
+        this.country = country || "India";
+        this.product = product || "No product";
     }
     set setCountry(desh) {
         this.country = desh;
@@ -61,19 +59,33 @@ class Manufacturer {
     get getProduct() {
         return this.product;
     }
-}
-class Product extends Manufacturer {
-    showProduct() {
-        console.log(this.product);
+    showLicense() {
+        console.log("License Number : 12345");
+        console.log("Country : India");
     }
 }
-let newProduct = new Manufacturer("Lenovo", "India", "Ideapad", 201);
+class Product extends Manufacturer {
+    proID;
+    price;
+    constructor(product, id, daam) {
+        super();
+        this.product = product;
+        this.proID = id;
+        this.price = daam;
+    }
+    showProductDetail() {
+        console.log("Product : ", this.product);
+        console.log("ID : ", this.proID);
+        console.log("Price : ", this.price);
+    }
+}
+let newProduct = new Manufacturer("Lenovo", "India", "Ideapad");
 console.log("Manufacturer is : ", newProduct.name);
-console.log("Product ID is : ", newProduct.proID);
 console.log(newProduct);
 newProduct.setCountry = "Bharat";
 console.log(newProduct.getCountry);
-let dfrntPro = new Product(); // Error -- Expected 4 arguments, but got 0.
+let pro = new Product(newProduct.getProduct, 102, 12000);
+pro.showProductDetail();
+pro.showLicense();
 export {};
-/* INHERITANCE */ 
 //# sourceMappingURL=ts-classes.js.map
