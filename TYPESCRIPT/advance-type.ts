@@ -48,14 +48,14 @@ const citizen : personAB2 = {name:"YoY" , age:22}
 console.log(citizen);
 */
 
-/* type alias -- used to define custom DT for obj , func , ... ; 
+/* type alias -- used to define custom DT for obj , func , ... ; */
 type personA = {name : string}
 type personB = {age : number}
 type personAB = personA & personB ;
 const insaan1 : personA = {name : "Yogendra"}
 const umar1 : personB = {age : 22 }
 const citizen1 : personAB = {name:"YoY" , age:22}
-*/
+
 
 /* enum -- group of named constant 
 enum Who {  // Most Preferred: String Enums. No bidirectional mapping

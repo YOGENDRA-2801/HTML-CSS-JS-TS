@@ -28,5 +28,23 @@ function random() {
         return "Random Text";
     }
 }
+function workingHours0() {
+    console.log("Part-Time-0 : 4 Hours");
+}
+let workingHours1 = function () {
+    console.log("Part-Time-1 : 4 Hours");
+};
+let workingHours2 = () => {
+    console.log("Part-Time-2 : 4 Hours");
+};
+const obj = {
+    workingHours3() {
+        console.log("Part-Time-3 : 4 Hours");
+    }
+};
+workingHours0();
+workingHours1();
+workingHours2();
+obj.workingHours3();
 export {};
 //# sourceMappingURL=ts-functions.js.map

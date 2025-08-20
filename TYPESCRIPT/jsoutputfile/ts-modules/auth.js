@@ -8,4 +8,4 @@ export class Auth {
         }
     }
 }
-//# sourceMappingURL=auth.js.map
+//# sourceMappingURL=Auth.js.map

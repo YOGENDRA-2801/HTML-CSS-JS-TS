@@ -2,8 +2,13 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
+    // "moduleResolution": "node16",
     "rootDir": "./",
     "outDir": "./jsoutputfile",  // ts se convert hui js wali saari file / output file yahi location me aayegi
+
+  // DECORATORS -- suggested while using decorator
+  "experimentalDecorators": true,  // required for function decorator as it is still in experiment phase
+  "emitDecoratorMetadata": true,
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module

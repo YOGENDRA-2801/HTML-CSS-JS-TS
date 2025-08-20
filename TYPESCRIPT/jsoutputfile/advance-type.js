@@ -1,59 +1,8 @@
 // Advanced -- union , intersection , type alias , enum , literal
+const insaan1 = { name: "Yogendra" };
+const umar1 = { age: 22 };
+const citizen1 = { name: "YoY", age: 22 };
 export {};
-/* union -- multiple DT mese kisi ek ko choose kiya jata hai
-
-let mixtype : string | number | [] = "Yogendra" ;
-mixtype = 22 ;
-mixtype = [] ;
-
-function phun() : string | boolean | string[] {  // for union in func k case me type inference se bhi kaam ho jayga
-    let age = 22 ;
-    if ( age >= 18) {
-        return "eligible to drive"
-    }
-    else if (age < 18 ) {
-        return false ;
-    }
-    else {
-        return ["eye test" , "mental test" , "mobility test"] ;
-    }
-}
-console.log(phun());
-
-function status(name:string | void | boolean) {
-    if (typeof name == 'string') {
-        return `Student name is ${name}`
-    } else {
-        return name ;
-    }
-}
-console.log(status("Yogendra"));
-
-*/
-/* intersection -- multiple DT ka combination rhta hai
-type personA1 = {name : string}
-type personB1 = {age : number}
-type personAB1 = personA1 & personB1 ;
-const insaan1 : personA1 = {name : "Yogendra"}
-const umar1 : personB1 = {age : 22 }
-const citizen1 : personAB1 = {name:"YoY" , age:22}
-
-interface personA2 {name : string}
-interface personB2 {age : number}
-type personAB2 = personA2 & personB2 ;  // # valid combo #
-const insaam : personA2 = {name : "Yogendra"}
-const umar : personB2 = {age : 22 }
-const citizen : personAB2 = {name:"YoY" , age:22}
-console.log(citizen);
-*/
-/* type alias -- used to define custom DT for obj , func , ... ;
-type personA = {name : string}
-type personB = {age : number}
-type personAB = personA & personB ;
-const insaan1 : personA = {name : "Yogendra"}
-const umar1 : personB = {age : 22 }
-const citizen1 : personAB = {name:"YoY" , age:22}
-*/
 /* enum -- group of named constant
 enum Who {  // Most Preferred: String Enums. No bidirectional mapping
     teacher = "GALTIYA" ,
